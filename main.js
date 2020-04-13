@@ -2,22 +2,23 @@ var btn=document.querySelector(".guessbtn");
 var rbtn=document.querySelector(".restart");
 
 let gn=Math.ceil(Math.random()*100);
-let arr=[];
-var c=10;
-var s=0;
+let arr=[]; //Previous Guesses
+var c=10;   //Chances left
+var s=0;    //Score
 
 document.getElementById("chance").innerHTML="Chances left : " +c;
 document.getElementById("score").innerHTML="Score : " +s+"" ;
 
 function dScore(ch,sc)
 {
-    document.getElementById("chance").innerHTML="Chances left : " +c;
-    document.getElementById("score").innerHTML="Score : " +s+"" ;
+    document.getElementById("chance").innerHTML="Chances left : " +ch;
+    document.getElementById("score").innerHTML="Score : " +sc+"" ;
     if(ch<=0)
         {
             document.getElementById("s1").innerHTML= "Game Over!! You have lost all chances";
         }
 }
+
 function array(num)
 {
     arr.push(num);
@@ -43,9 +44,9 @@ btn.onclick=function (){
         }
     else
     {
-        array(n);
         if(c>0)
         {
+            array(n);
             c--;
             for(i=0;i<10;i++)
                 {
