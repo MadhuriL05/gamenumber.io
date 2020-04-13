@@ -20,8 +20,8 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    color: teal;
-    font-family: 'Source Code Pro', monospace;
+    color: #99ccff;
+    font-family: 'Orbitron', sans-serif;
     font-size: 25px;
     margin-top: 5px;
 }
@@ -39,7 +39,17 @@ body{
     color: whitesmoke;
     font-family: 'Source Code Pro', monospace;
     font-size: 20px;
-    margin-top: 40px;
+    margin-top: 30px;
+}
+#s3
+{
+    display: flex;
+    justify-content: center;
+    color: #99ccff;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 20px;
+    margin-top: 30px;
+
 }
 .guessbtn, .restart {
     background-color:black; 
@@ -64,7 +74,7 @@ body{
   #s1{
     display: flex;
     justify-content: center;
-    color: teal;
+    color: #99ccff;
     font-family: 'Source Code Pro', monospace;
     font-size: 20px;
     margin-top: 30px;
